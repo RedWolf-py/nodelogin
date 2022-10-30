@@ -1,0 +1,40 @@
+{{#each erros}}
+<div class="texto2">{{texto}}</div>
+{{else}}
+{{/each}}
+
+<form action="" method="POST">
+
+    <div class="container">
+        <div class="card">
+            <h1>Login</h1>
+            <div class="user"></div>
+
+            <div class="flex">
+                <input type="text" name="email" class="login" placeholder="" required autocomplete="off"/>
+                <label for="email" class="labelLogin">Email</label>
+            </div>
+            <div class="flex">
+                <input type="password" name="password" class="senha" id="password" placeholder="" required autocomplete="off" />
+                <label for="password" class="labelsenha">Password</label>
+
+            </div>
+            <div class="link">
+                <p>remember-me</p>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <p><a href="#" target="_blank" rel="external">Forget password!</a></p>
+            </div>
+            <span class="check">
+                <input type="checkbox" name="lembre">
+            </span>
+            <div class="bt">
+                <button type="submit">Login</button>
+            </div>
+            <div class="register">
+                <p>Don't have an account?<a href="/registro" target="_blank"
+                        rel="external">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Register!</a>
+                </p>
+            </div>
+        </div>
+    </div>
+</form>

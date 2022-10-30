@@ -1,0 +1,35 @@
+{{#each er}}
+<div class="texto">{{texto}}</div>
+{{else }}
+{{/each}}
+
+<form action="" method="POST">
+  <div class="container">
+    <div class="cardbox">
+      <h1>Register</h1>
+      <div class="div" id="divname">
+        <input id="divname" type="text" class="name" name="name" classplaceholder="" required autocomplete="off">
+        <label for="name" class="namelabel">Name</label>
+
+      </div>
+      <div class="div" id="divemail">
+        <input type="text" class="email" name="email" classplaceholder="" required autocomplete="off">
+        <label for="email" class="emaillabel">Email</label>
+      </div>
+      <div class="div" id="divpassword">
+        <input type="password" class="password" name="password" classplaceholder="" required>
+        <label for="password" class="passwordlabel">Password</label>
+
+      </div>
+      <div class="div" id="divpassword2">
+        <input type="password" class="password2" name="password2" classplaceholder="" required>
+        <label for="password2" class="password2label">Repeat password</label>
+
+      </div>
+      <div class="btn">
+        <button type="submit" onclick="Atentication()">Register</button>
+      </div>
+
+    </div>
+  </div>
+</form>
